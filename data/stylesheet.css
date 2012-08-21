@@ -1,0 +1,89 @@
+#tabul {
+    padding: 0;
+    margin: 0;
+    padding: 5px 0;
+}
+#tabul li {
+    display: inline;
+    -webkit-border-radius: .3em .3em 0 0;
+    -moz-border-radius: .3em .3em 0 0;
+    border-radius: .3em .3em 0 0;
+    cursor: pointer;
+}
+.ntabs {
+    background: #BDC7D5;
+    margin-right: 1px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #BDC7D5;
+    padding: 5px 3px 5px 8px;
+}
+
+.ctab {
+    background: #E7EDF6;
+    position: relative;
+    top: 2px;
+    border-bottom-width: 0;
+}
+#tabcontent {
+    border: 1px solid #BDC7D5;
+    background: #E7EDF6;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+    font-size: 12px;
+}
+
+.ui-grid {
+    width: 500px;
+    padding: .4em;  
+    background-image: none;
+    height: 60%;
+}
+
+.ui-grid .ui-content {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.ui-grid table tbody td, .ui-grid , .ui-grid table thead a { 
+    padding: .4em;
+}
+
+.ui-header {
+    font-size: 16px;
+}
+.ui-grid table tbody td {
+    text-align: right; 
+    font-weight: normal;
+}
+.ui-grid .ui-grid-header, .ui-grid .ui-grid-footer {
+    padding: .8em .4em; 
+    text-align: center; 
+}
+.ui-grid table thead a {
+    display: block;
+}
+
+.ui-upper {
+    background: #FF0000;
+    padding: 0;
+    margin: 0;
+    padding: 5px 0;
+    border: 1px solid #BDC7D6;
+}
+
+.ui-header-field {
+    border: 1px solid #000000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: #E7EDF6;
+}
+
+.ui-table {
+    table-layout:auto;
+}
