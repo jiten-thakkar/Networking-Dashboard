@@ -82,7 +82,7 @@ $("#tabcontent").bind("t1", function updateWebSocketcontent() {
 
 $("#tabcontent").bind("t2", function updateSocketcontent() {
   var rows = '';
-  var headers = ["Host","Port","Tcp","Active", "Idle"];
+  var headers = ["Host","Port","Tcp","Active", "Sent", "Received"];
   
   $(".ui-grid").detach();
   $("#tabcontent").append('<div class="ui-grid">'
@@ -91,7 +91,8 @@ $("#tabcontent").bind("t2", function updateSocketcontent() {
 			 +'<tbody>'
 			 +getRows()
 			 +'</tbody>'
-			 +'</table></div>');
+			 +'</table>'
+       + '</div>');
   
   $("#tabul li").removeClass("ctab");
   $("#t"+2).addClass("ctab");
@@ -99,11 +100,11 @@ $("#tabcontent").bind("t2", function updateSocketcontent() {
   function getRows() {
     var rows = '';
     var data = [allData.socket.host,allData.socket.port,allData.socket.tcp,
-                allData.socket.active,allData.socket.idle];
+                allData.socket.active, allData.socket.socksent, allData.socket.sockreceived];
     $.each(allData.socket.host,function(i) {
       rows+='<tr>';
       $.each(headers,function(j) {
-	  rows+='<td class="ui-row">'+data[j][i]+'</td>';
+	       rows+='<td class="ui-row">'+data[j][i]+'</td>';
       });
       rows+='</tr>';
     });
@@ -213,7 +214,7 @@ $(function() {
     updateContent();
 });
 
-self.port.on("networking-dashboard", function(data) {
+self.port.on("networking", function(data) {
   allData = data;
   timeLineData.sent.push(data.socket.sent);
   timeLineData.received.push(data.socket.received);

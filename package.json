@@ -1,8 +1,9 @@
 {
-    "name": "Networking-Dashboard", 
+    "name": "networking", 
     "license": "MPL 2.0", 
-    "author": "Jiten Thakkar", 
-    "version": "0.1",
-    "id": "jid1-SsyJKBEwVM7h4Q", 
-    "description": "a basic add-on for networking of Firefox"
+    "author": "Jiten Thakkar | Valentin Gosu", 
+    "version": "0.1", 
+    "fullName": "about:networking", 
+    "id": "networking@dashboard", 
+    "description": "A front end for the Networking Dashboard"
 }

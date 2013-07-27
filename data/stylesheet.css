@@ -87,3 +87,10 @@
 .ui-table {
     table-layout:auto;
 }
+
+.heading {
+		font-weight: bold;
+		color: #401DBF;
+    background-color: #BDC7D6;
+    text-align: center;
+}
